@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Modal</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1" class="h1">We are learning DOM right now</h1>
+    <h1 class="h1">We are learning DOM right now - 2</h1>
+
+    <p class="para" id="suman">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quibusdam.</p>
+    <p class="para" id="pa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quibusdam.</p>
+
+    <script>
+        // let el1 = document.getElementById('h1')
+        // let el2 = document.getElementsByTagName('h1')
+        // let el3 = document.getElementsByClassName('h1')
+        // console.log(el1)
+        // console.log(el2)
+        // console.log(el3)
+
+        let element = document.querySelector('#pa')
+        let elements = document.querySelectorAll('p')
+      console.log('simple p ',element)
+      console.log('multiple p ',elements)
+    </script>
+</body>
+</html>

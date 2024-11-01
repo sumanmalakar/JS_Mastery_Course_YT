@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gameContainer">
+        <h2>Guess the Number</h2>
+        <p>Choose a range, then guess the number!</p>
+
+        <select id="range" onchange="setRange()">
+            <option value="100">1 - 100</option>
+            <option value="500">1 - 500</option>
+            <option value="1000">1 - 1000</option>
+        </select>
+
+        <input type="number" id="guessInput" placeholder="Enter the guess" min="1">
+
+        <div id="message"></div>
+
+        <button id="startGameButton" onclick="startGame()">Start Game</button>
+
+        <audio id="winSound" src="./win.mp3"></audio>
+        <audio id="tryAgainSound" src="./input_sound.mp3"></audio>
+        <audio id="gameOverSound" src="./you-lose-game-sound.mp3"></audio>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
